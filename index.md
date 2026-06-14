@@ -9,7 +9,7 @@ A practical guide to game sound design and audio implementation, taught through 
 
 Here, you'll find links, errata, and additional documentation.
 
-**How to cite:** Sinclair, J.-L., & Cardona, D. (Year). Principles of game audio and sound design (2nd ed.). Routledge.
+**How to cite:** Sinclair, J.-L., & Cardona, D. (2026). Principles of game audio and sound design (2nd ed.). Routledge.
 
 ## Links
 
