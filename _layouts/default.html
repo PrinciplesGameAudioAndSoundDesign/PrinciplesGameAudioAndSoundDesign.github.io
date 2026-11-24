@@ -16,7 +16,7 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+          <h1 id="project_title"><a href="{{ '/' | relative_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
           {% if site.show_downloads %}
@@ -31,6 +31,10 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+        {% unless page.url == "/" %}
+          <p><a href="{{ '/' | relative_url }}">← Back to home</a></p>
+        {% endunless %}
+
         {{ content }}
       </section>
     </div>
@@ -41,7 +45,7 @@
         <p class="copyright">
           {{ site.title | default: site.github.repository_name }}
           <br />
-          By Jean-Luc Sinclair and David Cardona
+          By Jean-Luc Sinclair and David Cardona.
           <br />
           Published by Routledge.
         </p>
